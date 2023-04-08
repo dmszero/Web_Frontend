@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h3>다양한 데이터의 출력</h3>
+    <div id="app">
+        <p>{{myText}}</p>
+        <p>{{myText}}</p>
+        <p v-html ='myHtmlText'></p>
+        <li v-for=" (item) in $data"> <!---데이터 전체에 있는 아이템을 for문 돌린다/.-->
+            {{item}}
+        </li>
+        <p>{{$data}}</p>
+
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                myText:'Vue 를 배워봅시다. 이렇게 그냥 출력할수 있고',
+                myHtmlText:'<h3>태그를 넣어서 출력할수도 있습니다.</h3>',
+                myNumber:12345,
+                myBool:true,
+                myArray:[1,2,3,4,5],
+                myObject:[
+                            {name:'다즐링', price:600},
+                            {name:'얼그레이', price:500},
+                            {name:'실론', price:500},
+                ]
+            }
+        })
+    </script>
+
+</body>
+</html>

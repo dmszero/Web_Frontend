@@ -1,0 +1,32 @@
+html{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+}
+button{
+    cursor: pointer;
+    padding: 6px, 12px;
+    border-radius: 6px;
+    color: rgb(182, 76, 76);
+    border: 2px;
+    background-color: rgb(255, 212, 212);
+    transition: background-color.2s;
+}
+button:hover{
+    background-color: rgb(218, 184, 184);
+}
+button:active{
+    background-color: rgb(240, 142, 223);
+}
+button:disabled{
+    opacity: .5;
+    pointer-events: none;
+}
+input{
+    padding: 6px,12px;
+    border-radius:6px ;
+    color: rgb(168, 7, 7);
+}
